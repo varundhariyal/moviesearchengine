@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta name="keywords" content="movie,movie search,imdb,imdb rating,imdb id,latest,latest movie,film,films,film plot,movie plot,writer,movie writer,film writer,year,actor,film actor,movie actor,duration,movie duration,film duration,awards,moview awards,film awards,award">
+  <title>Omdb Search Engine</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-7426237084343731",
+      enable_page_level_ads: true
+    });
+  </script>
+</head>
+
+<body>
+  <!--main view page  -->
+  <div class="jumbBack imgfluid jumbotron jumbotron-fluid">
+    <div class="container-fluid" id="banner">
+      <h1 class="display-3">HUNT</h1>
+      <s="img-fluid" src="jumb.jpg" alt="">
+        <p class="lead">A movie search engine</p>
+    </div>
+  </div>
+  <!-- loader goes here -->
+  <div class="container">
+    <div class="row">
+      <div class="col loader">
+        <div class="lds-hourglass"></div>
+      </div>
+    </div>
+  </div>
+  <!--end loader  -->
+  <div id="display" class="mainView container align">
+    <div class="row row1">
+      <div class="col">
+        <h4 class="display-4">Search Movie</h1>
+    </div>
+  </diV>
+    <div class="row row1 rowAlign">
+      <div class="col" id="Data">
+     <input id="search" class="input formAlign form-control mr-sm-2" type="search" placeholder="Title/imdbID" aria-label="Search">
+      </div>
+      <div class="col" id="Data">
+     <input id="search1" class="input formAlign form-control mr-sm-2" type="search" placeholder="Year(Optional)" aria-label="Search">
+      </div>
+    </div>
+    <div class="row row1 buttonAlign">
+      <div  id="buttonAlign"class="col">
+       <button  id="button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+     </div>
+    </div>
+</div>
+<!--end main view page  -->
+<!-- content page -->
+<div class="container contentDetail">
+<div class="row">
+<div class="col">
+  <div class="card-columns">
+    <div class="card">
+      <img id="posterImg"class="card-img-top poster img-fluid" src="download.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title title"></h3>
+        <p class="card-text year"></p>
+          <p class="card-text runtime"></p>
+          <p class="card-text language"></p>
+          <a class="website" href="#"></a>
+      </div>
+    </div>
+    <div class="card p-3">
+      <blockquote class="blockquote mb-0 card-body text-center">
+            <h3 class="card-title headingFont">Plot</h3>
+        <p class="plot"></p>
+      </blockquote>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title  headingFont">Actors</h3>
+        <p class="card-text actors"></p>
+        <h3 class="card-title  headingFont">Directed by</h3>
+        <p class="card-text director"></p>
+      </div>
+    </div>
+    <div class="card bg-primary text-white text-center p-3">
+      <blockquote class="blockquote mb-0">
+          <h3 class="card-title  headingFont">imDB</h3>
+        <p class="imdbrating">Rating-</p>
+        <p class="imdbid">ID-</p>
+        <p class="imdbvote">Votes-</p>
+      </blockquote>
+    </div>
+    <div class="card text-center">
+      <div class="card-body">
+        <h3 class="card-title  headingFont">Genre</h3>
+        <p class="card-text genre"></p>
+          <h3 class="card-title  headingFont">Awards</h3>
+          <p class="card-text awards"></p>
+      </div>
+    </div>
+    <div class="card p-3 text-center">
+      <blockquote class="blockquote mb-0">
+          <h3 class=" headingFont">
+          Boxoffice
+        </h3>
+        <p class="boxoffice strong"></p>
+          <h3 class=" headingFont">
+          Production
+        </h3>
+         <p class="production strong"></p>
+      </blockquote>
+    </div>
+    <div class="card">
+      <div class="card-body text-center">
+        <h3 class="card-title  headingFont">Writers</h3>
+        <p class="card-text writer"></p>
+      </div>
+    </div>
+  </div>
+  <div class="back card-body">
+  <a href="index.html" class="card-link"><h5>Back To Search Engine</h5></a>
+  <p class="text-muted text-center">Powered BY OMDBAPI</p>
+  </div>
+</div>
+</div>
+</div>
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <!--Ajax cdn  -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="main.js"></script>
+    <script src="main1.js"></script>
+</html>
